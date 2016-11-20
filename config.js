@@ -12,7 +12,7 @@ module.exports = {
 
 	api: {
 		AppId: '88b1ca60c82e6fea54e6e0a43a2f57e5',
-		AppSecret: '88b1ca60c82e6fea54e6e0a43a2f57e5';
+		AppSecret: '88b1ca60c82e6fea54e6e0a43a2f57e5'
 	}
 }
 
