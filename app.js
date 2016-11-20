@@ -15,9 +15,4 @@ app.listen(config.http_port, function () {
 	console.log('wechat reply server listening at', config.http_port);
 });
 
-var menu = JSON.stringify(require('./menu.json'));
-api.createMenu(menu, function (err, result){
-	console.log(result);
-});
-
 // FILE EOF

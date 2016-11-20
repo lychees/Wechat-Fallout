@@ -25,6 +25,12 @@ const {wechat: replyConfig} = require('../config');
 const router = require('express').Router();
 const wechat = require('wechat');
 
+var menu = JSON.stringify(require('../menu.json'));
+wechat.createMenu(menu, function (err, result){
+	console.log(result);
+});
+
+
 // 魔术路由
 function *reply(req, res) {
 	let msg = req.weixin;
