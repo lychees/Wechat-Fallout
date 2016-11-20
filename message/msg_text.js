@@ -9,7 +9,7 @@ module.exports = function *(message) {
 	var t = s.split('+');
 	var a = parseInt(t[0]), b = parseInt(t[1]);
 	total += 1;
-	return s + ' = ' + String(a+b) + '，这是第' + String(total) + '条消息.';
+	return s + ' = ' + String(a+b) + '，可能是第' + String(total) + '条消息.';
 }
 
 // FILE EOF
