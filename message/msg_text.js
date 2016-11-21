@@ -26,19 +26,17 @@ module.exports = function *(message) {
     	console.log(token);  
 		http.get("http://api.weixin.qq.com/cgi-bin/user/info?access_token=" + token + "&openid" + message.FromUserName + "=OPENID&lang=zh_CN", function(res) {
   			console.log("Got response: " + res.statusCode);
-  			return "欢迎你，" + res.nickname + '。 第' + String(total) + '条消息.';
+  			console.log('Welcome you');
+  			console.log('。 第' + String(total) + '条消息.');
+  			return '欢迎你，' + res.nickname;
 		}).on('error', function(e) {
   			console.log("Got error: " + e.message);
   			return 'Error, 第' + String(total) + '条消息.';
 		});
 	});  
- 
-	return {
-    	title: '你来我家接我吧',
-    	description: '这是女神与高富帅之间的对话',
-    	picurl: 'http://nodeapi.cloudfoundry.com/qrcode.jpg',
-    	url: 'http://nodeapi.cloudfoundry.com/'
-	};
+
+	console.log ('why?');
+	return "why?";
 	//return config.wechat.appid + '第' + String(total) + '条消息.';
 }
 
