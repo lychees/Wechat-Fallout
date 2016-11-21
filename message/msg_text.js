@@ -27,7 +27,8 @@ module.exports = function *(message) {
 		return http.get("http://api.weixin.qq.com/cgi-bin/user/info?access_token=" + token + "&openid" + message.FromUserName + "=OPENID&lang=zh_CN", function(res) {
   			console.log("Got response: " + res.statusCode);
   			console.log('Welcome you');
-  			console.log('。 第' + String(total) + '条消息.');
+  			console.log(res.nickname);
+  			return '123';
   			return '欢迎你，' + res.nickname;
 		}).on('error', function(e) {
   			console.log("Got error: " + e.message);
