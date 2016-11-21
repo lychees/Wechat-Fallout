@@ -5,9 +5,20 @@ var total = 0;
 var http = require('http');
 const config = require('../config');
 
+
+
+
 module.exports = function *(message) {
 	//let {Content: text} = message;
 	var s = message.Content;
+
+	if (s == 'p'){
+		return "\
+			HP：10\n\
+			SAN: 10\n\
+		";
+	}
+
 	var t = s.split('+');
 	var a = parseInt(t[0]), b = parseInt(t[1]);
 	total += 1;
@@ -20,6 +31,7 @@ module.exports = function *(message) {
 
 	var API = require('wechat-api');  
 	var api = new API(config.api.AppId, config.api.AppSecret);  
+
 /*	return api.getAccessToken(function (err, token) {  
     	console.log(err);  
     	console.log(token);  
@@ -33,16 +45,13 @@ module.exports = function *(message) {
 		});
 	});  */
 
-	api.getUser({openid: message.FromUserName, lang: 'en'}, function (err, result){
+	/*api.getUser({openid: message.FromUserName, lang: 'en'}, function (err, result){
 		console.log(result);
 		return result.nickname;
-	});
+	});*/
 	
-
-
 	console.log ('why?');
 	return "why?";
-	//return config.wechat.appid + '第' + String(total) + '条消息.';
 }
 
 // FILE EOF
