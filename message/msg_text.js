@@ -5,6 +5,57 @@ var total = 0;
 var http = require('http');
 const config = require('../config');
 
+var player = {
+
+};
+
+var base = {
+	"上海环球金融中心": {
+		level: 3,
+		output: {
+			gold: 2,
+			food: 1,
+			wood: 1,
+			stone: 0
+		},
+		limit: {
+			gold: 100,
+			food: 100,
+			wood: 20,
+			stone: 50
+		},
+		deposit: {
+			gold: 10,
+			food: 0,
+			wood: 20,
+			stone: 20
+		}
+	},
+	"东方明珠": {
+		level: 2,		
+		output: {
+			gold: 0,
+			food: 2,
+			wood: 0,
+			stone: 1
+		},
+		limit: {
+			gold: 20,
+			food: 20,
+			wood: 20,
+			stone: 20
+		},
+		deposit: {
+			gold: 10,
+			food: 10,
+			wood: 10,
+			stone: 10
+		}
+	}
+};
+
+
+//https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E7%8E%AF%E7%90%83%E9%87%91%E8%9E%8D%E4%B8%AD%E5%BF%83
 
 
 
