@@ -11,7 +11,9 @@ var player = {
 
 var base = {
 	"上海环球金融中心": {
-		level: 3,
+		level: 3,		
+		x: 31.234856, 
+		y: 121.507416,
 		output: {
 			gold: 2,
 			food: 1,
@@ -32,7 +34,9 @@ var base = {
 		}
 	},
 	"东方明珠": {
-		level: 2,		
+		level: 2,
+		x: 31.239691, 
+		y: 121.499758,	
 		output: {
 			gold: 0,
 			food: 2,

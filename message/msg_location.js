@@ -3,8 +3,8 @@
 
 
 function distance(x1, y1, x2, y2) {
-    var lat = [x1, y1];
-    var lng = [x2, y2];
+    var lat = [x1, x2];
+    var lng = [y1, y2];
     var R = 6378137;
     var dLat = (lat[1] - lat[0]) * Math.PI / 180;
     var dLng = (lng[1] - lng[0]) * Math.PI / 180;
