@@ -14,9 +14,9 @@ function distance(x1, y1, x2, y2) {
     return Math.round(d);
 } 
 
-
 module.exports = function *(message) {
-	return "你的位置：" + message.Location_X + " " + message.Location_Y + "。\n 你的距离：";
+	return "你的位置：" + message.Location_X + " " + message.Location_Y + "。\n 你与 SWFC 的距离：" + String(distance(
+		message.Location_X, message.Location_Y, 31.234777, 121.507370));
 }
 
 // FILE EOF
