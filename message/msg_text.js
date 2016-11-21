@@ -5,7 +5,6 @@ var total = 0;
 var http = require('http');
 const config = require('../config');
 
-
 module.exports = function *(message) {
 	//let {Content: text} = message;
 	var s = message.Content;
