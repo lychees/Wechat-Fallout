@@ -14,8 +14,7 @@ module.exports = function *(message) {
 
 	if (s == 'p'){
 		return "\
-			HP：10\n\
-			SAN: 10\n\
+			HP：10\nSAN: 10\n\
 		";
 	}
 
