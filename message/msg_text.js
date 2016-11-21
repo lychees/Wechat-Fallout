@@ -32,7 +32,13 @@ module.exports = function *(message) {
   			return 'Error, 第' + String(total) + '条消息.';
 		});
 	});  
-  
+ 
+	return {
+    	title: '你来我家接我吧',
+    	description: '这是女神与高富帅之间的对话',
+    	picurl: 'http://nodeapi.cloudfoundry.com/qrcode.jpg',
+    	url: 'http://nodeapi.cloudfoundry.com/'
+	};
 	//return config.wechat.appid + '第' + String(total) + '条消息.';
 }
 
