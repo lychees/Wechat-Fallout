@@ -19,17 +19,13 @@ module.exports = function *(message) {
 	// https://github.com/node-webot/wechat
 	// 消息接口指南。
 
-	console.log('OpenId: ' + message.FromUserName);
-
 	var API = require('wechat-api');  
 	var api = new API(config.api.AppId, config.api.AppSecret);  
 	return api.getAccessToken(function (err, token) {  
     	console.log(err);  
     	console.log(token);  
 		return http.get("http://api.weixin.qq.com/cgi-bin/user/info?access_token=" + token + "&openid=" + message.FromUserName + "&lang=zh_CN", function(res) {
-  			console.log("Got response: " + res.statusCode);
-  			console.log('Welcome you');
-  			console.log(res.nickname);
+  			console.log(res);
   			return '123';
   			return '欢迎你，' + res.nickname;
 		}).on('error', function(e) {
