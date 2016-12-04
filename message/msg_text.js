@@ -100,7 +100,7 @@ module.exports = function *(message) {
 		return result.nickname;
 	});*/
 	P.t = new Date().getTime();
-	return "上次签到\n时间："  + String(P.t) + "\n位置：";
+	return "上次签到\n时间："  + String(P.lastCheckIn.t) + "\n位置：" + P.lastCheckIn.x + ", " + P.lastCheckIn.y; 
 	
 	//console.log ('why?');
 	//return "why?";

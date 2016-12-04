@@ -1,6 +1,8 @@
 // message: location
 // 接收地理位置消息
 
+require('../model/player');
+
 
 function distance(x1, y1, x2, y2) {
     var lat = [x1, x2];
@@ -15,6 +17,11 @@ function distance(x1, y1, x2, y2) {
 } 
 
 module.exports = function *(message) {
+    
+    P.lastCheckIn.t = new Date().getTime();
+    P.lastCheckIn.x = message.Location_X;
+    P.lastCheckIn.y = message.Location_Y;
+
 	return "你的位置：" + message.Location_X + " " + message.Location_Y + "。\n 你与 SWFC 的距离：" + String(distance(
 		message.Location_X, message.Location_Y, 31.234777, 121.507370));
 }
