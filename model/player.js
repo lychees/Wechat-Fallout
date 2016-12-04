@@ -14,5 +14,3 @@ var Player = {
 
 	}
 };
-
-P = Object.create(Player);

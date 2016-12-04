@@ -104,7 +104,7 @@ module.exports = function *(message) {
 		console.log(result);
 		return result.nickname;
 	});*/
-	P.t = new Date().getTime();
+	//P.t = new Date().getTime();
 	return "'上次签到\n时间："  + String(P.t) + "\n位置：";
 }
 
