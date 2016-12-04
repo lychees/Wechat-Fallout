@@ -1,7 +1,7 @@
 // message: test
 // 接收文本消息
 
-require('../model/player');
+//require('../model/player');
 
 var total = 0;
 var http = require('http');
@@ -105,7 +105,7 @@ module.exports = function *(message) {
 		return result.nickname;
 	});*/
 	//P.t = new Date().getTime();
-	return "'上次签到\n时间："  + String(P.t) + "\n位置：";
+	return "上次签到\n时间："  + String(0) + "\n位置：";
 }
 
 // FILE EOF
