@@ -2,8 +2,11 @@ var Player ={
 	UID: "",
 	logs: {},
 	nickName: "",
-	HP,
-	SAN,	
+	HP: 0,
+	SAN: 0,
+	x: 0,
+	y: 0,
+	t: 0,	
 	ctor: function(){
 
 	},
@@ -11,3 +14,5 @@ var Player ={
 
 	}
 };
+
+P = new Player();
