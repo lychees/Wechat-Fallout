@@ -16,20 +16,20 @@ app.listen(config.http_port, function () {
 });
 
 /*
-	// 创建菜单
-	// https://github.com/node-webot/wechat-api
-	// http://blog.csdn.net/sinat_29843547/article/details/49253827
-	var API = require('wechat-api');  
-	var api = new API(config.api.AppId, config.api.AppSecret);  
-	api.getAccessToken(function (err, token) {  
-	    console.log(err);  
-	    console.log(token);  
-	});   
-	  
-	var menu = JSON.stringify(require('./menu.json'));  
-	api.createMenu(menu, function (err, result) {  
-	    console.log(result);  
-	});  
+// 创建菜单
+// https://github.com/node-webot/wechat-api
+// http://blog.csdn.net/sinat_29843547/article/details/49253827
+var API = require('wechat-api');  
+var api = new API(config.api.AppId, config.api.AppSecret);  
+api.getAccessToken(function (err, token) {  
+    console.log(err);  
+    console.log(token);  
+});   
+  
+var menu = JSON.stringify(require('./menu.json'));  
+api.createMenu(menu, function (err, result) {  
+    console.log(result);  
+});  
 */
 
 // FILE EOF

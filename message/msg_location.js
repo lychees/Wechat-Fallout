@@ -15,14 +15,12 @@ function distance(x1, y1, x2, y2) {
 } 
 
 module.exports = function *(message) {
-
-
-    
-	return "你的位置：" + message.Location_X + " " + message.Location_Y + "。\n你与 SWFC 的距离：" + String(distance(
+	return "你的位置：" + message.Location_X + " " + message.Location_Y + "。\n 你与 SWFC 的距离：" + String(distance(
 		message.Location_X, message.Location_Y, 31.234777, 121.507370));
 }
 
 // FILE EOF
+
 /*
 玩家：
 HP：

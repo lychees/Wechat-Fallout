@@ -7,7 +7,9 @@ var total = 0;
 var http = require('http');
 const config = require('../config');
 
+var player = {
 
+};
 
 var base = {
 	"上海环球金融中心": {
@@ -62,7 +64,6 @@ var base = {
 //https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E7%8E%AF%E7%90%83%E9%87%91%E8%9E%8D%E4%B8%AD%E5%BF%83
 
 
-var t = 0;
 
 module.exports = function *(message) {
 	//let {Content: text} = message;
@@ -105,7 +106,10 @@ module.exports = function *(message) {
 		return result.nickname;
 	});*/
 	//P.t = new Date().getTime();
-	return "上次签到\n时间："  + String(0) + "\n位置：";
+	//return "上次签到\n时间："  + String(0) + "\n位置：";
+	
+	console.log ('why?');
+	return "why?";
 }
 
 // FILE EOF
