@@ -6,7 +6,7 @@ var Player = {
 	nickName: "",
 	HP: 0,
 	SAN: 0,
-	lastCheckIn: Object.create(CheckIn),	
+	lastCheckIn: null, //Object.create(CheckIn),	
 	ctor: function(){
 	},
 	upd: function(){
@@ -15,3 +15,4 @@ var Player = {
 };
 
 P = Object.create(Player);
+P.lastCheckIn = Object.create(CheckIn);
