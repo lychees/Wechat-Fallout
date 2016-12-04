@@ -1,4 +1,4 @@
-var Player ={
+var Player = {
 	UID: "",
 	logs: {},
 	nickName: "",
@@ -15,4 +15,4 @@ var Player ={
 	}
 };
 
-P = new Player();
+P = Object.create(Player);
